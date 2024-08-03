@@ -13,10 +13,10 @@
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item {{ Request::is('seller/dashboard') ? 'active' : '' }}">
-            <a class="nav-link" href="">
+        <li class="nav-item {{ Request::is('dashboard') ? 'active' : '' }}">
+            <a class="nav-link" href="{{ url('dashboard') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Beranda</span></a>
+                <span>Dashboard</span></a>
         </li>
 
         <!-- Divider -->
@@ -26,10 +26,22 @@
         <div class="sidebar-heading">
             menu
         </div>
-        <li class="nav-item {{ Request::is('seller/instruments') || Request::is('seller/images*') ? 'active' : '' }}">
-            <a class="nav-link" href="">
+        <li class="nav-item {{ Request::is('artikel*') ? 'active' : '' }}">
+            <a class="nav-link" href="{{ route('artikel.index') }}">
                 <i class="fas fa-fw fa-book"></i>
                 <span>Artikel</span></a>
+        </li>
+
+        <li class="nav-item {{ Request::is('faq*') ? 'active' : '' }}">
+            <a class="nav-link" href="{{ route('faq.index') }}">
+                <i class="fas fa-fw fa-question"></i>
+                <span>FAQ</span></a>
+        </li>
+
+        <li class="nav-item {{ Request::is('pengaturan*') ? 'active' : '' }}">
+            <a class="nav-link" href="{{ route('pengaturan.index') }}">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Pengaturan</span></a>
         </li>
 
         <hr class="sidebar-divider d-none d-md-block">

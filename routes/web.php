@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\PengaturanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [AuthController::class, 'login'])->middleware('guest');
-Route::get('/beranda    ', [BerandaController::class, 'index']);
+Route::get('/dashboard    ', [DashboardController::class, 'index']);
+Route::resource('artikel', ArtikelController::class);
+Route::resource('pengaturan', PengaturanController::class);
+Route::resource('faq', FaqController::class);
