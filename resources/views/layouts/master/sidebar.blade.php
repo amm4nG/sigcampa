@@ -38,6 +38,12 @@
                 <span>FAQ</span></a>
         </li>
 
+        <li class="nav-item {{ Request::is('peta*') ? 'active' : '' }}">
+            <a class="nav-link" href="{{ route('peta.index') }}">
+                <i class="fas fa-fw fa-map"></i>
+                <span>Data Peta</span></a>
+        </li>
+
         <li class="nav-item {{ Request::is('pengaturan*') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('pengaturan.index') }}">
                 <i class="fas fa-fw fa-cog"></i>

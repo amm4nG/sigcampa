@@ -9,17 +9,16 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active">Beranda</a></li>
-                <li><a href="#pricing">Artikel</a></li>
-                <li><a href="#services">Peta Penyebaran Stunting</a></li>
-                <li><a href="#faq-2">FAQ</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#beranda" class="active">Beranda</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#peta">Peta Penyebaran Stunting</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="#about">Get Started</a>
+        <a class="btn-getstarted" href="#artikel">Get Started</a>
 
     </div>
 </header>
